@@ -1,0 +1,55 @@
+ <html>
+    <head>
+      <title>Image recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+      <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" ></script>
+     <link rel="stylesheet" href="image.css">
+    
+    </head>
+  
+    <body>
+    <div class="container">
+      
+      <center>
+  <h3 class=" btn-default heading">IMAGE RECOGNITION </h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Model is trained to identify the following humans: </p>
+  <b class="name_objects">
+  Amsul
+    <hr>
+    Varshil
+    <hr>  
+    Vissu
+    <hr>
+    Swetha
+    <hr>
+  </b>
+        <label>Webcam View - </label>
+  <div id="camera"></div>
+        <br><br>
+  <div id="result"></div>
+        <br><br>
+  <button class="btn btn-success" onclick="capture_img()">Capture Image</button>
+        <br><br>
+        <button class="btn btn-danger " onclick="define()">Identify Image</button>
+        <br><br>
+  
+        <p style="font-size: 22px;">human : <span id="Object_name"></span> </p>
+        <p style="font-size: 22px;">Accuracy : <span id="Accuracy"></span> </p>
+        <br><br>
+      </center>
+  
+    </div>
+    <p class="footer"> Developed by: Amshul Korlepara</p>
+  <script src="Image.js"></script>
+  
+    </body>
+  </html>
+  
+   
